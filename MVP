@@ -1,0 +1,40 @@
+MVP
+- draw it
+- add appointment [title, date, time]
+- view list of appointments (ordered by date)
+- hide/remove old appointments
+- delete appointment
+- view details
+- show weather
+
+
+Trello: Project Management Software
+- put the above in the to do
+-
+
+use in head of HTML for mobile
+<meta name="viewport" content="width-device-width">
+
+media query
+
+
+BREAKDOWN of project approach
+
+1) Page 1 css, html
+    build the first page [appts homepage]
+2) jquery to show page 2
+    Add jquery onlick.plus = show page two
+3) css + html for page 2
+    when they click replace the html with other html
+4) jquery to show page 1 when save or back
+    jquery back to the last page
+5) X button click listener
+    put click listener on x button
+    to create a modal
+    append below HTML to pop up
+    <div class="prompt">
+    <span class="prompt-message">are you sure?</span>
+    <button class="prompt-delete">delete</button>
+    <button class="prompt-cancel">cancel</button>
+    </div>
+6)
