@@ -38,3 +38,78 @@ BREAKDOWN of project approach
     <button class="prompt-cancel">cancel</button>
     </div>
 6)
+
+
+
+RESPONSIBILITIES
+
+Main Screen
+- Show appointments
+- The abilities to changes pages (add new, edit)
+- Remove appt
+- Confirmation prompt
+  - confirm
+  - cancel
+
+New Appointment
+- Go back to list view
+- Create appointment
+- Add new appt to list to appointment store
+
+Show Details
+- Go back
+- edit
+- delete
+
+- appointment store
+- appointment class
+
+
+
+
+
+Different files
+- show-appointments.js
+-
+
+
+Steps to first check-in
+1) create a js file that declares the global variable
+    var app = {}
+
+2) make appointment.js file to hold your appointment object
+    //The appointment constructor creates a new appt
+    app.Appointment = function (spec) {
+    //TODO: construct an appointment from spec
+    };
+
+3) make appointment-store.js file
+
+    app.AppointmentStore = function() {
+
+    //TODO:  implement the appt store here
+    // should have these properties
+    // add(appointment)
+    // removebyID(appointmentID)
+    // query()
+};
+
+4) make list-appointments-screen.js file
+    Purpose is to manage the first page screen (list view)
+
+
+5) make page-switcher.js file
+    app.PageSwitcher = function () {
+
+
+    registerPage(name, callback)
+    goToPage(name)
+
+}
+
+
+so it will flow in HTML like:
+jquery
+app.js
+appointment-store.js
+appointment.js
