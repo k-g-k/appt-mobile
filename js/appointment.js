@@ -11,6 +11,7 @@ app.Appointment = function (spec) {
     apptTime: spec.apptTime,
     apptStreet: spec.apptStreet,
     apptCityState: spec.apptCityState
+    
   };
 
   return self;

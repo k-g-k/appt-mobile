@@ -9,22 +9,25 @@ app.AppointmentStore = function() {
     //   });
     // },
 
-    add: function(appointment) {
-      if (!self.exists(appointment)){
-        collection.push(appointment);
-        return true;
-      }
+    add: function(appt) {
+      collection.push(appt);
+      return true;
 
-      return false;
+      // if (!self.exists(obj)){
+      //   collection.push(obj);
+      //   return true;
+      // }
+      //
+      // return false;
     },
 
     query: function () {
       return collection;
     },
 
-    remove: function(obj) {
-      collection = collection.filter(function(item){
-        return !obj.equal(item);
+    remove: function(appt) {
+      collection = collection.filter(function(item) {
+        return !appt.equal(item);
       });
     }
   };
