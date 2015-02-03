@@ -113,3 +113,24 @@ jquery
 app.js
 appointment-store.js
 appointment.js
+
+
+
+Next steps:
+
+Bobby:
+- what goes in form into an object (newAppointment)
+- being able to make that display
+
+Grace:
+- get edit and new form to work together
+- lo dash
+- delete button
+
+
+
+-----------------------------
+MISC
+- appointment object working
+- how to create instances of the object
+- appointment store functioning
