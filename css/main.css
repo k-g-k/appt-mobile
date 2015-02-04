@@ -103,14 +103,14 @@ body {
   float: right;
   /*padding: 1em;*/
   /*background: white;*/
-  /*display: block;*/
+  display: inline-block;
   /*width: 25%;*/
   /*height: 100%;*/
   /*padding-bottom: 100%;*/
 }
 
 .remove-button {
-  display: block;
+  display: inline-block;
   float: right;
   outline: none;
   background: white;
