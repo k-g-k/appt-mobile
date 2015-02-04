@@ -139,7 +139,7 @@ ul {
 }
 
 .go-back {
-  position: fixed;
+  position: absolute;
   top: 1em;
   left: 0.5em;
   float:left;
