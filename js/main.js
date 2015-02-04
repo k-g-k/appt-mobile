@@ -5,6 +5,7 @@
   // in show-list-view.js
 //   app.showListView();
 // });
+// value="<%- m.title %>" value="<%- m.date %>" 
 
 $(function() {
   var page1Html = $('#page1').html();

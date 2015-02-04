@@ -10,6 +10,7 @@ body {
   left: 0;
   bottom:0;
   background: whitesmoke;
+  /*padding-right: 1em;*/
 }
 
 .navbar {
@@ -116,7 +117,7 @@ body {
   background: white;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 95%;
   /*position: absolute;*/
 
 }
@@ -139,29 +140,41 @@ ul {
 }
 
 .go-back {
+
   position: absolute;
-  top: 1em;
-  left: 0.5em;
+  top: 0.50em;
+  left: 0.75em;
+  /*display: inline-block;*/
+  float: left;
+
+  /*position: absolute;
+  top: 0.25em;
+  left: 0.25em;
   float:left;
-  /*margin-left: 2em;*/
+  display: inline-block;*/
 
 }
 
 .back-button {
-  font-family: "Annie Use Your Telescope", cursive, sans-serif;
+  position: absolute;
+  float:left;
+  outline: none;
+  background: transparent;
+  font-family: "Annie Use Your Telescope", sans-serif;
+  font-size: 40px;
+  border:none;
+  cursor: pointer;
+  font-weight: bold;
+  /*font-family: "Annie Use Your Telescope", cursive, sans-serif;
   font-size: 40px;
   float: left;
   padding: 1em;
-  /*border-radius: 100%;*/
   outline: none;
   background: transparent;
   border:none;
   cursor: pointer;
   font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  position: fixed;*/
 }
 
 
