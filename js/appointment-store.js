@@ -11,7 +11,6 @@ app.AppointmentStore = function() {
 
     add: function(appt) {
       collection.push(appt);
-      return true;
 
       // if (!self.exists(obj)){
       //   collection.push(obj);
@@ -27,7 +26,7 @@ app.AppointmentStore = function() {
 
     remove: function(appt) {
       collection = collection.filter(function(item) {
-        return !appt.equal(item);
+        return item.id !== appt.id;
       });
     }
   };

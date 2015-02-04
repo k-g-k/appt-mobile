@@ -1,14 +1,14 @@
 app.showListView = function () {
-  var listViewHtml = $('#page1').html();
+  var listViewHtml = $('#listView').html();
 
   $('.app-container').html(listViewHtml);
 
-  $('.add-new').click(app.showEditView);
+  $('.add-appt').click(app.showEditView);
 
   $('.appt-item').click(function () {
     var item = $(this);
     var appointmentId = item.data('apptid');
-    var appt = app.apptStore.getById(appointmentId);
+    var appt = app.appointmentStore.getById(appointmentId);
 
     app.showEditView(appt);
   });

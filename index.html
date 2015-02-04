@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Appointment Manager</title>
     <link rel="stylesheet"  href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
@@ -14,9 +14,9 @@
     </div>
 
 
-    <script id="page1" type="texthtmlstuff">
+    <script id="listView" type="texthtmlstuff">
 
-      <div class="page-1">
+      <div class="list-view">
 
         <nav class="navbar">
 
@@ -38,7 +38,7 @@
               </div>
 
               <div class="appt-delete">
-                <button class="remove-button">X</button>
+                <button class="remove-button">&times;</button>
               </div>
             </div>
           </li>
@@ -50,8 +50,8 @@
 
 
 
-    <script id="page2" type="texthtmlstuff">
-      <div class="page-2">
+    <script id="editView" type="texthtmlstuff">
+      <div class="edit-view">
 
         <nav class="navbar">
           <span class="go-back">
@@ -82,9 +82,9 @@
     </script>
 
 
-    <script id="page3" type="texthtmlstuff">
+    <script id="detailsView" type="texthtmlstuff">
 
-      <div class="page-3">
+      <div class="details-view">
 
         <nav class="navbar">
           <span class="go-back">
@@ -130,7 +130,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/appointment-store.js"></script>
-  <script src="js/appointments.js"></script>
+  <script src="js/appointment.js"></script>
   <script src="js/main.js"></script>
   </body>
 </html>

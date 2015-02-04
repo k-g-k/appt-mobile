@@ -112,13 +112,13 @@ body {
 .remove-button {
   display: inline-block;
   float: right;
+  position: relative;
   outline: none;
   background: white;
   border: none;
   cursor: pointer;
-  width: 95%;
+  /*width: 95%;*/
   /*position: absolute;*/
-
 }
 
 
@@ -155,7 +155,7 @@ ul {
 }
 
 .back-button {
-  position: absolute;
+  /*position: absolute;*/
   float:left;
   outline: none;
   background: transparent;

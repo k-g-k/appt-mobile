@@ -4,7 +4,7 @@ app.showEditView = function (appt) {
 
   $('.app-container').html(compiledTemplate(appt));
 
-  $('.add-button').click(app.showEditView);
+  $('.add-appt').click(app.showEditView);
 
   $('.appointment-form').submit(function () {
     var appt = getAppointmentFromForm();
