@@ -1,10 +1,9 @@
-// $(function() {
-//   //This is the default view, which is set up and initialized
-//   //in show-list-view.js
-//   app.appointments = app.AppointmentStore();
-//   app.showListView();
-//   app.loadCurrentWeather();
-// });
+$(function() {
+  //This is the default view, which is set up and initialized
+  //in show-list-view.js
+  app.appointments = app.AppointmentStore();
+  app.showListView();
+});
 // value="<%- m.title %>" value="<%- m.date %>"
 
 
