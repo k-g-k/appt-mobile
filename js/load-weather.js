@@ -39,8 +39,6 @@ app.loadCurrentTemp = function() {
 
   });
 
-
-
 };
 //Calls function
 app.loadCurrentTemp();

@@ -134,3 +134,53 @@ MISC
 - appointment object working
 - how to create instances of the object
 - appointment store functioning
+
+
+
+------------------------------
+Thurs 2/5
+
+Steps for class group coding
+- instal depndencies (jquery, lodash)
+- make your form
+- place holder divs for content
+- add js scripts to HTML
+- wire up the submit event
+- get the inputted username
+- call their api
+- lodash template to display the user profile
+- combine AJAX result w/ template and display
+
+terminal
+bower install jquery
+bower install lodash
+git add .
+git commit -m jquery & lodash install
+
+html
+<form class="form"></form>
+<input type="text" class="username-input">
+<button type="submit" class="submit-button">Go</button>
+<script type="text/html" id="user-data">
+<div class="user-info">
+  <div class="user-info__pic">
+    <img class="avatar" src="<%- m.avatar__url %>"/> </div>
+  </div>
+  <div class="user-info__name"> <%- m.name || m.login %> </div>
+</div>
+</script>
+
+
+
+$('.wrapper').html(template(userData));
+
+
+
+
+- make button w/ #repos
+- make a placeholder for repos list
+- wire up button event handler
+- call repos api to get all repos
+- create lodash template
+- get html for template
+- slice html in our placeholder
