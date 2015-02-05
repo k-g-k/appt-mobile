@@ -3,6 +3,7 @@
 //   //in show-list-view.js
 //   app.appointments = app.AppointmentStore();
 //   app.showListView();
+//   app.loadCurrentWeather();
 // });
 // value="<%- m.title %>" value="<%- m.date %>"
 
@@ -35,7 +36,7 @@ $(function() {
 
   // If you click on back button of Page 3, you go back to Page 1.
   $('.app-container').on('click','.back-button',function(){
-    $('.details-view').html(listPageHtml);
+    $('.details-view').html(listViewHtml);
   });
 
 });
