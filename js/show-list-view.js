@@ -13,12 +13,24 @@ app.showListView = function () {
       // that displays the editView screen
   $('.add-appt').click(app.showEditView);
 
-      //dealing with IDs
-  $('.appt-item').click(function () {
-    var item = $(this);
-    var appointmentId = item.data('apptid');
-    var appt = app.appointmentStore.getById(appointmentId);
+  $('.appt-preview').click(app.showDetailsView);
 
-    app.showEditView(appt);
+  $('.remove-button').click(function(){
+    var theButton = $(this);
+
+    theButton.closest('li').remove();
+
+
+
   });
+
+
+      //dealing with IDs
+  // $('.appt-item').click(function () {
+  //   var item = $(this);
+  //   var appointmentId = item.data('apptid');
+  //   var appt = app.appointmentStore.getById(appointmentId);
+  //
+  //   app.showEditView(appt);
+  // });
 };

@@ -1,12 +1,12 @@
-app.showEditView = function (appt) {
-  // var editViewHtml = $('#editView').html();
-  // var compiledTemplate = _.template(editViewHtml, { variable: 'm' });
-  //
-  // $('.app-container').html(compiledTemplate(appt));
+app.showEditView = function () {
 
-  $('.app-container').html($('#editView').html());
+  var editViewHtml = $('#editView').html();
+
+  $('.app-container').html($(editViewHtml));
 
   $('.add-appt').click(app.showEditView);
+
+  $('.back-button').click(app.showListView);
 
   $('.appointment-form').submit(function () {
 
@@ -16,3 +16,9 @@ app.showEditView = function (appt) {
     return false;
   });
 };
+
+
+
+// var compiledTemplate = _.template(editViewHtml, { variable: 'm' });
+//
+// $('.app-container').html(compiledTemplate(appt));
