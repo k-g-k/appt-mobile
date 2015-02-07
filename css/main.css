@@ -1,6 +1,7 @@
 body {
   font-size: 1em;
   font-family: "Annie Use Your Telescope", "Open Sans", sans-serif;
+  list-style-type: none;
 }
 
 .app-container {
@@ -27,7 +28,7 @@ body {
   overflow:auto;
 }
 
-.header {
+.header-title-add {
   /*display:inline-block;*/
   text-align: center;
   position: relative;
@@ -53,7 +54,7 @@ body {
   font-weight: bold;
 }
 
-.appt-preview-container {
+.appt-item {
   border: none;
   box-shadow: 0 0 2px #888888;
   background: white;
@@ -137,17 +138,16 @@ ul {
   text-align: center;
 }
 
-.header2 {
+.header-title {
   margin-left:1em;
   text-align:center;
   margin-right: 0.5em;
 }
 
 .go-back {
-
   position: absolute;
   top: 0.50em;
-  left: 0.25em;
+  left: 0.25em;*/
   /*display: inline-block;*/
   float: left;
 
@@ -180,14 +180,6 @@ ul {
   font-weight: bold;
   position: fixed;*/
 }
-
-
-.blah {
-  background:red;
-  font-size:3em;
-}
-
-
 
 /*Page 3 CSS*/
 

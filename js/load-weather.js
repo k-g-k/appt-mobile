@@ -2,6 +2,9 @@
 // but I'm naming it app.loadCurrentTemp because
 // that's what this specific code is doing.
 
+// var userData = $('#user-data').html();
+// var template = _.template(userData, {variable: 'm'});
+
 app.loadCurrentTemp = function() {
 
   // Declaring variable with weather API info
@@ -41,7 +44,7 @@ app.loadCurrentTemp = function() {
 
 };
 //Calls function
-app.loadCurrentTemp();
+// app.loadCurrentTemp();
 
 
 
