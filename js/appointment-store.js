@@ -17,12 +17,25 @@ app.AppointmentStore = function() {
     },
 
         // SHOULD remove an appoint from the collection of appointments
-    remove: function(appt) {
-      appointments = appointments.filter(function(item) {
-        return item.id !== appt.id;
-      });
+    // remove: function(appt) {
+    //   appointments = appointments.filter(function(item) {
+    //     return item.id !== appt.id;
+    //   });
+    // },
+
+    getById: function(appointmentId) {
+      for (var i = 0; i < appointments.length; ++i) {
+        var thisAppointmentId = appointments[i].uniqueId;
+        console.log(thisAppointmentId);
+
+        if (thisAppointmentId === appointmentId) {
+          return appointments[i];
+          console.log(i);
+        }
+      };
     }
   };
+
 
   return self;
 

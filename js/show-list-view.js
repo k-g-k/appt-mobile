@@ -5,6 +5,7 @@ app.showListView = function () {
       //variable that selects the listView script in the html
   var listViewHtml = $('#listView').html();
   // var indivApptHtml = $('#indivAppt').html();
+  var detailsViewHtml = $('#detailsView').html();
   var appts = app.appointments.query();
   var template = _.template(listViewHtml, {variable: 'm'});
 
@@ -21,7 +22,17 @@ app.showListView = function () {
       // that displays the editView screen
   $('.add-button').click(app.showEditView);
 
-  $('.appt-item').click(app.showDetailsView);
+
+
+  $('.appt-item').click(function () {
+    var item = $(this);
+    var uniqueId = item.data('id');
+    var appt = app.appointments.getById(uniqueId);
+    app.showDetailsView(appt);
+    console.log(uniqueId)
+  });
+
+
 
   // $('.app-container').append(indivApptHtml);
 

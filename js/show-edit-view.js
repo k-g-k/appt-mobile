@@ -19,7 +19,6 @@ app.showEditView = function () {
         apptTime: $('input[name=time]').val(),
         apptStreet: $('input[name=street]').val(),
         apptCityState: $('input[name=citystate]').val(),
-        id: Date.now()
       });
 
       console.log(appt);
@@ -38,7 +37,6 @@ app.showEditView = function () {
     // app.createAppointment();
     event.preventDefault();
     app.showListView();
-    alert("fire");
 
 
     // return false;

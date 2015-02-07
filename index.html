@@ -33,7 +33,7 @@
           <% m.appts.forEach(function (appt) { %>
 
 
-            <li class="appt-item">
+            <li class="appt-item" data-id="<%- appt.uniqueId %>">
               <div class="appt-preview">
                 <div class="appt-time"> <%- appt.apptTime %> </div>
                 <div class="appt-title"> <%- appt.apptTitle %> </div>
@@ -94,34 +94,37 @@
           </span>
         </nav>
 
-        <div class="appt-details-container">
-          <div class="appt-details">
-            <div class="appt-title">
-              Front End Homework Due
-            </div>
+    <div class="appt-details-container">
 
-            <div class="appt-date">
-              February 9
-            </div>
 
-            <div class="appt-time">
-              10pm
-            </div>
+        <div class="appt-details">
+          <div class="appt-title">
+            <%- m.apptTitle %>
+          </div>
 
-            <div class="appt-street">
-              800 Duke St.
-            </div>
+          <div class="appt-date">
+            <%- m.apptDate %>
+          </div>
 
-            <div class="appt-citystate">
-              Durham, NC
-            </div>
+          <div class="appt-time">
+            <%- m.apptTime %>
+          </div>
 
+          <div class="appt-street">
+            <%- m.apptStreet %>
+          </div>
+
+          <div class="appt-citystate">
+            <%- m.apptCityState %>
           </div>
         </div>
 
 
-    </script>
+      </div>
 
+
+
+    </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="bower_components/lodash/lodash.min.js"></script>
@@ -130,7 +133,6 @@
   <script src="js/appointment-store.js"></script>
   <script src="js/appointment.js"></script>
   <script src="js/show-list-view.js"></script>
-  <script src="js/create-new-appointment.js"></script>
   <script src="js/show-edit-view.js"></script>
   <script src="js/show-details-view.js"></script>
   <script src="js/load-weather.js"></script>

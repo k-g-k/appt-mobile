@@ -6,7 +6,7 @@ app.Appointment = function (spec) {
     apptTime: spec.apptTime,
     apptStreet: spec.apptStreet,
     apptCityState: spec.apptCityState,
-    id: spec.id
+    uniqueId: (Date.now())
   };
 };
 
