@@ -23,6 +23,14 @@ app.AppointmentStore = function() {
     //   });
     // },
 
+    load: function () {
+      appointments = JSON.parse(localStorage.getItem('appointments')) || [];
+    },
+
+    save: function () {
+      localStorage.setItem('appointments', JSON.stringify(appointments));
+    },
+
     getById: function(appointmentId) {
       for (var i = 0; i < appointments.length; ++i) {
         var thisAppointmentId = appointments[i].uniqueId;

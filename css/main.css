@@ -5,13 +5,14 @@ body {
 }
 
 .app-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom:0;
   background: whitesmoke;
   /*padding-right: 1em;*/
+  overflow:auto;
 }
 
 .navbar {
@@ -214,6 +215,7 @@ ul {
   margin-top: 1em;
   width: 80%;
   max-width: 25em;
+  text-align: center;
   /*padding: 0.5em;*/
   /*box-sizing: border-box;*/
   font-family: "Annie Use Your Telescope", "Open Sans", sans-serif;

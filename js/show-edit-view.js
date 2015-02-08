@@ -24,6 +24,7 @@ app.showEditView = function () {
       console.log(appt);
 
       app.appointments.add(appt);
+      app.appointments.save(appt);
 
 
 

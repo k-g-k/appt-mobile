@@ -39,6 +39,8 @@ app.loadCurrentTemp = function() {
     // instead of append in order to have the info display
     // in front of the degree sign.
     $('.weather').prepend(tempInFah);
+    // return tempInFah;
+
 
   });
 

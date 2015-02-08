@@ -40,6 +40,7 @@ app.showDetailsView = function (appt) {
   //   $('.appt-title').getbyID().text(apptArr[i].apptTitle);
   //   $('.appt-street').getbyID().text(apptArr[i].apptStreet);
   //   $('.appt-citystate').getbyID().text(apptArr[i].apptCityState);
+  app.loadCurrentTemp();
 
   };
 

@@ -9,7 +9,7 @@ app.showListView = function () {
   var appts = app.appointments.query();
   var template = _.template(listViewHtml, {variable: 'm'});
 
-
+  app.appointments.load(appts);
 
 
       // placing listViewHtml (ie #listView)
@@ -17,6 +17,8 @@ app.showListView = function () {
   $('.app-container').html(template ({
     appts:appts
   }));
+
+
 
       // assigning the add-appt button to the showEditView function
       // that displays the editView screen
@@ -50,18 +52,21 @@ app.showListView = function () {
 
   // };
 
-  // app.loadCurrentTemp();
+  app.loadCurrentTemp();
+
+
+  $('.remove-button').click(function(){
+    var theButton = $(this);
+
+    theButton.closest('li').remove();
+
+
+
+  });
 
 };
 
-  // $('.remove-button').click(function(){
-  //   var theButton = $(this);
-  //
-  //   theButton.closest('li').remove();
 
-
-
-  // });
 
 
 
