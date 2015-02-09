@@ -10,9 +10,6 @@ app.showEditView = function () {
 
   $('.appointment-form').submit(function (event) {
 
-    // app.createAppointment = function() {
-
-
       var appt = app.Appointment({
         apptTitle: $('input[name=title]').val(),
         apptDate: $('input[name=date]').val(),
@@ -23,29 +20,47 @@ app.showEditView = function () {
 
       console.log(appt);
 
+
       app.appointments.add(appt);
       app.appointments.save(appt);
 
 
-
-
-
-      // $('.appt-item').append(appt);
-
-
-    // };
-
-    // app.createAppointment();
     event.preventDefault();
     app.showListView();
 
-
-    // return false;
   });
 };
 
+//Below is commented out code trying to figure out pulling dates
+// $(function() {
+//   $( "#datepicker" ).datepicker();
+//   $( "#format" ).change(function() {
+//     $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+//   });
+// });
+
+// $( 'input[name=date]' ).datepicker({
+//   showOn: "button",
+//   buttonImage: "images/calendar.gif",
+//   buttonImageOnly: true,
+//   buttonText: "Select date"
+// }).val(),
 
 
-// var compiledTemplate = _.template(editViewHtml, { variable: 'm' });
-//
-// $('.app-container').html(compiledTemplate(appt));
+
+// $('input[name=date]').DatePicker({
+//   flat: true,
+//   date: '2008-07-31',
+//   current: '2008-07-31',
+//   calendars: 1,
+//   starts: 1
+// }),
+
+// $(function() {
+//   $( "#datepicker" ).datepicker();
+// });
+
+// $('.appt-item').append(appt);
+
+
+// };

@@ -19,7 +19,7 @@ app.AppointmentStore = function() {
         // SHOULD remove an appoint from the collection of appointments
     // remove: function(appt) {
     //   appointments = appointments.filter(function(item) {
-    //     return item.id !== appt.id;
+    //     return item.id !== appt.Id;
     //   });
     // },
 
