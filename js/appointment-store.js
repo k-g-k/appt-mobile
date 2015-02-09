@@ -17,11 +17,8 @@ app.AppointmentStore = function() {
     },
 
         // SHOULD remove an appoint from the collection of appointments
-    // remove: function(appt) {
-    //   appointments = appointments.filter(function(item) {
-    //     return item.id !== appt.Id;
-    //   });
-    // },
+
+
 
     load: function () {
       appointments = JSON.parse(localStorage.getItem('appointments')) || [];
@@ -29,6 +26,13 @@ app.AppointmentStore = function() {
 
     save: function () {
       localStorage.setItem('appointments', JSON.stringify(appointments));
+    },
+
+    remove: function(appt) {
+      appointments = appointments.filter(function(item) {
+        return item.uniqueId !== appt.uniqueId;
+      });
+      // localStorage.removeItem('appointments', JSON.stringify(appointments));
     },
 
     getById: function(appointmentId) {

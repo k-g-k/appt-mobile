@@ -20,5 +20,16 @@ app.showListView = function () {
     console.log(uniqueId)
   });
 
+  $('.remove-button').click(function(e){
+    var item = $(this).closest('li');
+    var uniqueId = item.data('id');
+    var appt = app.appointments.getById(uniqueId);
+
+    e.stopPropagation();
+    app.appointments.remove(appt);
+    app.appointments.save(appt);
+    item.remove();
+
+  });
 
 };

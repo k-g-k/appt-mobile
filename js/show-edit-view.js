@@ -18,6 +18,8 @@ app.showEditView = function () {
         apptCityState: $('input[name=citystate]').val(),
       });
 
+      
+
       console.log(appt);
 
 

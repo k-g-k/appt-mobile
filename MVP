@@ -184,3 +184,22 @@ $('.wrapper').html(template(userData));
 - create lodash template
 - get html for template
 - slice html in our placeholder
+
+
+
+
+DATE
+
+var date = 02/07/15
+var time = 7:30pm
+date+ "" + time
+
+
+
+var html $('<div> <button> hi</button></div>');
+
+$('button', html).clock(function() {
+alert('hi');
+})
+
+$('body').append(html);
