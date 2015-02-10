@@ -207,7 +207,7 @@ ul {
 }
 
 .save-button {
-  padding: 1em;
+  padding: 1.5em;
   font-size: 1em;
   margin-top: 0.5em;
   background: white;
@@ -216,7 +216,7 @@ ul {
   border: none;
   border-radius: 50%;
   font-family: "Century Gothic", sans-serif;
-  box-shadow: 0 0 2px darkgrey;
+  box-shadow: 0 0 2px dimgrey;
 }
 
 /*Page 3 CSS*/
