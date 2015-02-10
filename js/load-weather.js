@@ -3,7 +3,6 @@ app.loadCurrentTemp = function(apptCityState) {
   var weather = $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + apptCityState);
 
   weather.done( function(data) {
-
     var tempData = JSON.stringify(data.main);
     var tempDataParsed = JSON.parse(tempData);
     var tempInK = tempDataParsed.temp;
@@ -15,6 +14,9 @@ app.loadCurrentTemp = function(apptCityState) {
     var tempInFah = Math.round(convertToFah(tempInK));
 
     $('.weather').prepend(tempInFah);
+
+    var weatherDescript = data.weather[0].description;
+    $('.weather-description').append(weatherDescript);
 
   });
 
