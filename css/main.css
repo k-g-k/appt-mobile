@@ -9,7 +9,7 @@ input {
   color: darkgrey;
   width: 50%;
   padding: 0.5em;
-  font-size: 0.8em;
+  font-size: 1em;
   margin: 0.5em;
 
   ::-webkit-input-placeholder {
@@ -207,14 +207,16 @@ ul {
 }
 
 .save-button {
-  padding: 1.5em;
-  font-size: 0.8em;
-  margin: 2em;
-  background: lightgrey;
+  padding: 1em;
+  font-size: 1em;
+  margin-top: 0.5em;
+  background: white;
+  color: dimgrey;
   outline: none;
   border: none;
   border-radius: 50%;
   font-family: "Century Gothic", sans-serif;
+  box-shadow: 0 0 2px darkgrey;
 }
 
 /*Page 3 CSS*/
