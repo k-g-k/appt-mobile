@@ -137,7 +137,10 @@ input {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
 
   /*display: inline-block;
   float: right;
@@ -149,7 +152,6 @@ input {
   /*width: 95%;*/
   /*position: absolute;*/
 }
-
 
 /*Page 2 CSS*/
 
@@ -277,7 +279,6 @@ ul {
   background: white;
   box-sizing: border-box;
   box-shadow: 0 0 2em #444;
-  padding: 2em;
 }
 
 /*.modal-header .close-modal {
