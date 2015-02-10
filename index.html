@@ -34,13 +34,16 @@
 
 
             <li class="appt-item" data-id="<%- appt.uniqueId %>">
+              <header class=appt-delete>
+                <button class="remove-button">&times;</button>
+              </header>
               <div class="appt-preview">
                 <div class="appt-time"> <%- appt.apptTime %> </div>
                 <div class="appt-title"> <%- appt.apptTitle %> </div>
                 <div class="appt-date"> <%- appt.apptDate %> </div>
               </div>
 
-                <button class="remove-button">&times;</button>
+
             </li>
           <% }) %>
         </ul>
@@ -51,9 +54,6 @@
     <script id="modal" type="text/html">
       <div class="modal">
         <div class="modal-content">
-          <header class="modal-header">
-            <button class="close-modal">X</button>
-          </header>
           <div class="modal-body">
             <h2>Are you sure you want to remove this appointment?</h2>
             <button class="confirm-remove">Yes</button>

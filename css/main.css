@@ -134,13 +134,18 @@ input {
 }
 
 .remove-button {
-  display: inline-block;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+
+
+  /*display: inline-block;
   float: right;
   position: relative;
   outline: none;
   background: white;
   border: none;
-  cursor: pointer;
+  cursor: pointer;*/
   /*width: 95%;*/
   /*position: absolute;*/
 }
@@ -272,13 +277,14 @@ ul {
   background: white;
   box-sizing: border-box;
   box-shadow: 0 0 2em #444;
+  padding: 2em;
 }
 
-.modal-header .close-modal {
+/*.modal-header .close-modal {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-}
+}*/
 
 .modal-body {
   text-align: center;
