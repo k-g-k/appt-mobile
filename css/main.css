@@ -210,13 +210,13 @@ ul {
   padding: 1.5em;
   font-size: 1em;
   margin-top: 0.5em;
-  background: white;
+  background: transparent;
   color: dimgrey;
   outline: none;
   border: none;
   border-radius: 50%;
   font-family: "Century Gothic", sans-serif;
-  box-shadow: 0 0 2px dimgrey;
+  box-shadow: 0 0 2px black;
 }
 
 /*Page 3 CSS*/
