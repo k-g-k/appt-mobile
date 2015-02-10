@@ -8,7 +8,6 @@ app.showDetailsView = function (appt) {
 
   $('.back-button').click(app.showListView);
 
-
-  app.loadCurrentTemp();
+  app.loadCurrentTemp(appt.apptCityState);
 
 };

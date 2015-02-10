@@ -17,6 +17,7 @@ app.showListView = function () {
     var uniqueId = item.data('id');
     var appt = app.appointments.getById(uniqueId);
     app.showDetailsView(appt);
+    app.loadCurrentTemp();
     console.log(uniqueId)
   });
 
