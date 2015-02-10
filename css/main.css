@@ -269,7 +269,7 @@ ul {
 
 .modal-content {
   position: fixed;
-  max-width: 600px;
+  /*max-width: 600px;*/
   min-width: 60%;
   top: 50%;
   left: 50%;
@@ -279,6 +279,7 @@ ul {
   background: white;
   box-sizing: border-box;
   box-shadow: 0 0 2em #444;
+  padding: 1em;
 }
 
 /*.modal-header .close-modal {
@@ -296,4 +297,9 @@ ul {
   font-size: 0.8em;
   margin-bottom: 5px;
   width: 5em;
+  background: whitesmoke;
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
 }
