@@ -4,7 +4,9 @@ app.showDetailsView = function (appt) {
 
   $('.app-container').html(detailsTemplate(appt));
 
-  $('.edit-button').click(app.showEditView);
+  $('.edit-button').click(function() {
+    app.showEditView(appt);
+  });
 
   $('.back-button').click(app.showListView);
 

@@ -216,7 +216,7 @@ ul {
   border: none;
   border-radius: 50%;
   font-family: "Century Gothic", sans-serif;
-  box-shadow: 0 0 2px black;
+  /*box-shadow: 0 0 2px black;*/
 }
 
 /*Page 3 CSS*/

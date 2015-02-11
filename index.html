@@ -78,11 +78,11 @@
         <div class="form-container">
           <form class="appointment-form">
             <ul>
-              <li><input name="title" type="text" placeholder="Title" required></li>
-              <li><input name="date" type=date placeholder="Date" required></li>
-              <li><input name="time" type="text" placeholder="Time" required></li>
-              <li><input name="street" type="text" placeholder="Street"required></li>
-              <li><input name="citystate" type="text" placeholder="City, State" required></li>
+              <li><input name="title" type="text" value="<%- m.apptTitle %>" placeholder="Title" required></li>
+              <li><input name="date" type=date value="<%- m.apptDate %>" placeholder="Date" required></li>
+              <li><input name="time" type="text" value="<%- m.apptTime %>" placeholder="Time" required></li>
+              <li><input name="street" type="text" value="<%- m.apptStreet %>" placeholder="Street"required></li>
+              <li><input name="citystate" type="text" value="<%- m.apptCityState %>" placeholder="City, State" required></li>
               <button class="save-button">Save</button>
             </ul>
 
